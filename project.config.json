@@ -1,0 +1,10 @@
+{
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wx81790f2bfd215d83",
+	"projectname": "tellJokesToGF",
+	"condition": {}
+}
