@@ -1,39 +1,26 @@
 <!--index.wxml-->
 <view class="container">
-    <!-- 用户登录测试 -->
-    <view class="userinfo" bindtap="login">
-        <image
-            class="userinfo-avatar"
-            src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"
-            background-size="cover"
-        ></image>
-        <view>
-            <text class="userinfo-nickname">{{logged ? userInfo.nickName : '点击测试登录接口'}}</text>
-            <text class="userinfo-nickname" wx:if="{{logged}}">{{userInfo.lastLoginTime}}</text>
-        </view>
+    <!-- 导航栏 -->
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">笑话</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">图片</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">视频</view>
+    <view class='tab-bar active-{{currentTab}}' id='bar'></view>
+  </view>
+  <view class='swiper-box'>
+     <view class="swiper-item" wx:if="{{currentTab==0}}">
+      <view class='joke-wrap'>
+        <text selectable="true" space>从前有一只熊给自己剪指甲
+        剪着剪着
+        它就变成了一只能
+        </text>
+      </view>
     </view>
-
-
-    <!-- 上传图片测试 -->
-    <view class="uploader">
-        <view class="uploader-text" bindtap="doUpload">
-            <text>上传图片</text>
-        </view>
-        <view class="uploader-container" wx:if="{{imgUrl}}">
-            <image
-                class="uploader-image"
-                src="{{imgUrl}}"
-                mode="aspectFit"
-                bindtap="previewImg"
-            ></image>
-        </view>
+     <view class="swiper-item" wx:if="{{currentTab==1}}">
+     456
     </view>
-
-
-    <!-- 上传图片测试 -->
-    <view class="uploader">
-        <navigator url="../addCgi/addCgi" open-type="navigate" class="uploader-text">
-            <text>快速增加 CGI</text>
-        </navigator>
+     <view class="swiper-item" wx:if="{{currentTab==2}}">
+     789
     </view>
+  </view>
 </view>
