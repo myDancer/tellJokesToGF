@@ -47,7 +47,36 @@
 .joke-wrap{
   width: 100%;
   box-sizing: border-box;
-  border-bottom: 2rpx solid #f2f3f5;
-  padding: 30rpx;
+  border-bottom: 10rpx solid #f2f3f5;
   font-size: 24rpx;
+}
+.user-wrap{
+  display: flex;
+  align-items: center;
+  padding: 32rpx 32rpx 24rpx 32rpx;
+}
+.context {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  padding: 0 32rpx;
+}
+.username{
+  margin-left: 24rpx;
+}
+.btn-group{
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20rpx;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+}
+.icn{
+  margin-right: 12rpx;
+  background-color: #fff;
 }

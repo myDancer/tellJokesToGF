@@ -10,10 +10,32 @@
   <view class='swiper-box'>
      <view class="swiper-item" wx:if="{{currentTab==0}}">
       <view class='joke-wrap'>
-        <text selectable="true" space>从前有一只熊给自己剪指甲
+        <view class='user-wrap'>
+          <image style='width: 80rpx;height: 80rpx;' src='./user-unlogin.png'></image>
+          <text class='username' selectable="true" space>帅哥江</text>
+        </view>
+        <text class='context' selectable="true" space>从前有一只熊给自己剪指甲
         剪着剪着
         它就变成了一只能
         </text>
+        <view class='btn-group'>
+          <view class='btn'>
+            <image class='icn' style='width: 28rpx;height: 28rpx;background-color:#f2f3f5;' src='https://static.qiushibaike.com/static/images/touch_v3/laugh@3x.png'></image> 
+            123
+          </view>
+          <view class='btn'>
+             <image class='icn' style='width: 28rpx;height: 28rpx;background-color:#f2f3f5;' src='https://static.qiushibaike.com/static/images/touch_v3/boring@3x.png'></image> 
+             321
+          </view>
+          <view class='btn'>
+             <image class='icn' style='width: 28rpx;height: 28rpx;background-color:#f2f3f5;' src='https://static.qiushibaike.com/static/images/touch_v3/share@3x.png'></image> 
+             123
+          </view>
+          <view class='btn'>
+             <image class='icn' style='width: 28rpx;height: 28rpx;background-color:#f2f3f5;' src='https://static.qiushibaike.com/static/images/touch_v3/comment@3x.png'></image> 
+             123
+          </view>
+        </view>
       </view>
     </view>
      <view class="swiper-item" wx:if="{{currentTab==1}}">
